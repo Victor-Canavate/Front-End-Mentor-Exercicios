@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(30, 38%, 92%);
+}
+
+/*Container*/
+
+.container {
+    display: grid;
+    grid-template-areas:
+    "img content"
+    "img content";
+    gap: 0;
+    justify-content: center;
+    margin-top: 20vh;
+}
+
+
+.essence__image {
+    grid-area: img;
+    height: 60vh;
+    width: 20vw;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/*Conteúdo principal*/
+
+.essence__content {
+    grid-area: content;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.essence__perfume h1 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 20px;
+    font-size: 12px;
+
+}
+
+.essence__perfume--title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.essence__perfume--subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 22px;
+}
+
+.essence__prices {
+    grid-area: content;
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.essence__prices--main {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 35px;
+}
+
+.essence__prices--sale {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+/*Botão*/
+
+.essence__button {
+    grid-area: content;
+    background: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px
+}
+
+.essence__button:hover {
+    background-color: hsl(158, 48%, 21%);
+    cursor: pointer;
+}
+
+.essence__button::before {
+    display: inline-flex;
+    content: '';
+    background-image: url('./icon-cart.svg');
+    background-size: 15px 15px;
+    height: 15px;
+    width: 15px;
+}
+
+.essence__button a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+/*Responsivo*/
+
+@media screen and (max-width: 540px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin: 0 auto;
+        width: 95vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    .essence__content {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .essence__image {
+        width: 95vw;
+        height: 26vh;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+}
+
+}
+
+
+    @media screen and (min-width: 768px) {
+        .essence__image{
+            width: 50vw;
+            height: 75vh;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        .container{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+
+    @media screen and (min-width: 820px) {
+
+        .essence__image {
+            width: 50vw;
+            height: 45vh;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .essence__image {
+            height: 75vh;
+            width: 30vw;
+        }
+    }
+

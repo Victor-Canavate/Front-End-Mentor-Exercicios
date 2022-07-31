@@ -1,0 +1,105 @@
+
+
+body {
+    background-color: hsl(217, 54%, 11%)
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.equilibrium {
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 15px;
+    box-shadow: 3px 3px 10px black;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.equilibrium__img {
+    width: 260px;
+    border-radius: 15px;
+}
+
+.equilibrium__texts {
+    color: white;
+    margin-top: 15px;
+}
+
+.equilibrium__texts h1 {
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 10px;
+}
+
+.equilibrium__texts h2 {
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 20px;
+}
+
+.equilibrium__stats {
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.equilibrium__stats--eth {
+    color: hsl(178, 100%, 50%)
+}
+
+.equilibrium__stats--eth::before {
+    display: inline-flex;
+    content: '';
+    background-image: url('icon-ethereum.svg');
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+}
+
+.equilibrium__stats--days {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.equilibrium__stats--days::before {
+    display: inline-flex;
+    content: '';
+    background-image: url('icon-clock.svg');
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+}
+
+.line {
+    color: hsl(215, 51%, 70%);
+    width: 100%;
+}
+
+.equilibrium__creator {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.equilibrium__creator--img {
+    border: 1px solid white;
+    border-radius: 100%;
+    height: 30px;
+}
+
+.equilibrium__creator--name {
+    margin-left: 10px;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+}
+
+.equilibrium__creator--creation {
+    color: hsl(215, 51%, 70%);;
+}
