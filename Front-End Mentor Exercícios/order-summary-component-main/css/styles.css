@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(pattern-background-desktop.svg);
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+main {
+    margin: 20vh 0;
+}
+
+
+.container {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px hsl(224, 23%, 55%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px        ;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container__title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 20px 0
+}
+
+.container__title h1 {
+    font-size: 2rem;
+    margin: 20px 0;
+    font-weight: 900;
+}
+
+.container__title span {
+    font-weight: 500;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%)
+}
+
+.container__plan {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    background-color:hsl(225, 100%, 98%);
+    padding: 20px 15px;
+}
+
+
+.container__plan--all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container__plan--price {
+    margin-left: 10px;
+}
+
+.container__plan--price h3 {
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.container__plan--price span {
+    color: hsl(224, 23%, 55%)
+}
+
+.container__plan a {
+    color: hsl(245, 75%, 52%);
+}
+
+.container__plan a:hover {
+    cursor: pointer;
+    opacity: 0.7;;
+}
+
+.container__payment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container__payment button {
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    width: 80%;
+    font-weight: 700;
+    box-shadow: 5px 5px 10px hsl(245, 75%, 52%);
+    margin-bottom: 20px;
+}
+
+.container__payment button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.container__payment a {
+    color: hsl(224, 23%, 55%);
+}
+
+.container__payment a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        background-image: url(pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        width: 90vw;
+        overflow-x: hidden;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+
